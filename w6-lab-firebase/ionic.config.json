@@ -1,0 +1,7 @@
+{
+  "name": "w6-lab-firebase",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

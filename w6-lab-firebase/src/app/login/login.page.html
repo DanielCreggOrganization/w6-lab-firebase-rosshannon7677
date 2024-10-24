@@ -1,0 +1,29 @@
+<ion-content class="ion-padding" fullscreen>
+  <div class="login-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-title class="ion-text-center">My App</ion-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <form [formGroup]="userAuthForm">
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="email" formControlName="email"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+          </ion-item>
+
+          <div class="button-container">
+            <ion-button expand="block" (click)="handleAuthentication()">Log In</ion-button>
+            <ion-button expand="block" color="secondary" (click)="handleRegistration()">Create Account</ion-button>
+            <ion-button expand="block" fill="outline" color="tertiary" (click)="handlePasswordReset()">Reset Password</ion-button>
+          </div>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
